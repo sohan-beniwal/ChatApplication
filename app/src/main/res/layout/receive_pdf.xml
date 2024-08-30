@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="20dp"
+    android:background="@drawable/message_box_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/pdficon"
+            android:layout_width="65dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_picture_as_pdf_24"
+            android:adjustViewBounds="true"
+            android:paddingLeft="20dp"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/pdfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/pdficon"
+            android:layout_centerVertical="true"
+            android:text="PDF Name"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:id="@+id/downloadbtn"
+            android:src="@drawable/baseline_download_24"
+            android:layout_toEndOf="@id/pdfName"
+            android:layout_centerVertical="true"
+            >
+
+        </ImageView>
+    </RelativeLayout>
+    </RelativeLayout>
